@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio - Matías Rómoli</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-brand">
+        <img
+          loading="lazy"
+          class="profile-photo"
+          src="./public/logo.png"
+          alt="Foto de Matías Rómoli"
+        />
+        <h1 class="name">Matías Rómoli</h1>
+      </div>
+
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a href="#experience">Experiencia</a></li>
+          <li class="nav-item">
+            <a
+              href="https://diagonalalaro.com.ar/author/matiasromoli/"
+              target="_blank"
+            >
+              <i data-lucide="edit-3"></i>
+              Diagonal Al Aro
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="portfolio">
+      <!-- Main content -->
+      <main class="main">
+        <!-- Hero / presentación -->
+        <section class="hero">
+          <div class="hero-info">
+            <img
+              loading="lazy"
+              class="hero-photo"
+              src="./public/me.png"
+              alt="Foto de perfil"
+            />
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-item">
+              <i data-lucide="map-pin"></i> <span>La Plata, Argentina</span>
+            </p>
+            <p class="contact-item">
+              <a href="mailto:matiasromoli22@gmail.com">
+                <i data-lucide="mail"></i>
+                <span>matiasromoli22@gmail.com</span>
+              </a>
+            </p>
+            <p class="contact-item">
+              <a href="https://linkedin.com/in/matiasromoli" target="_blank">
+                <i data-lucide="linkedin"></i>
+                <span>linkedin.com/in/matiasromoli</span>
+              </a>
+            </p>
+            <p class="contact-item">
+              <a href="https://github.com/matias-romoli" target="_blank">
+                <i data-lucide="github"></i>
+                <span>github.com/matiasromoli</span>
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about">
+          <div class="about-content">
+            <h1 class="section-title">Sobre mí</h1>
+            <p class="about-text" id="experience">
+              Técnico Superior en Periodismo Deportivo y estudiante de la
+              Licenciatura en Comunicación Social (UNLP). Coberturas
+              periodísticas, redacción y radio. Diseño y programación.
+            </p>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="experience-section" id="experience">
+          <h1 class="section-title">Experiencia</h1>
+
+          <div class="experience-card">
+            <div class="experience-image">
+              <i data-lucide="edit-3"></i>
+            </div>
+            <div class="experience-data">
+              <div class="data-container">
+                <h1>Redactor</h1>
+                <p>La Plata 1 / Gambeta LP / Diagonal Al Aro</p>
+              </div>
+              <div class="experience-description">
+                <p>
+                  Redactor de artículos periodísticos para la web. Noticias de
+                  índole social y deportivas. En Diagonal Al Aro, también
+                  participé en espacios de entrevistas y de creación de
+                  contenido audiovisual para redes sociales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-image">
+              <i data-lucide="radio"></i>
+            </div>
+            <div class="experience-data">
+              <div class="data-container">
+                <h1>Columnas radiales</h1>
+                <p>Sofia Del Plata / FM Raíces Rock</p>
+              </div>
+              <div class="experience-description">
+                <p>
+                  Columna radial sobre el básquet platense, Liga Federal y Liga
+                  Argentina, con análisis, entrevistas y actualidad de los
+                  equipos platenses y sus protagonistas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-image">
+              <i data-lucide="tv"></i>
+            </div>
+            <div class="experience-data">
+              <div class="data-container">
+                <h1>Prensa</h1>
+                <p>Club Reconquista La Plata</p>
+              </div>
+              <div class="experience-description">
+                <p>
+                  Encargado de las transmisiones de básquet. Productor y editor.
+                  Manejo de herramientas y software de transmisión en vivo: OBS,
+                  cámaras, y edición con Canva.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-image">
+              <i data-lucide="megaphone"></i>
+            </div>
+            <div class="experience-data">
+              <div class="data-container">
+                <h1>Community Manager</h1>
+                <p>Estilista</p>
+              </div>
+              <div class="experience-description">
+                <p>
+                  Gestión integral de redes sociales. Creador de contenido.
+                  Planificación. Uso de Excel para seguimiento y análisis de
+                  métricas. Optimización de procesos de comunicación interna y
+                  externa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Visual -->
+        <section class="visual-section">
+          <h1 class="section-title">Participación en</h1>
+          <div class="visual-card">
+            <div class="visual-image">
+              <img
+                loading="lazy"
+                src="./public/imagen1.png"
+                alt="Imagen de experiencias laborales"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Matías Rómoli — Todos los derechos reservados</p>
+        <div class="footer-links">
+          <a href="mailto:matiasromoli22@gmail.com"
+            ><i data-lucide="mail"></i
+          ></a>
+          <a href="https://linkedin.com/in/matiasromoli" target="_blank"
+            ><i data-lucide="linkedin"></i
+          ></a>
+          <a href="https://github.com/matiasromoli" target="_blank"
+            ><i data-lucide="github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
