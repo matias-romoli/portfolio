@@ -8,10 +8,10 @@
 }
 
 .portfolio {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
   padding: 80px 20px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
 section {
   scroll-margin-top: 60px;
@@ -345,17 +345,18 @@ body {
   }
 
   @media (max-width: 1024px) {
-    padding: 30px 0;
-    gap: 16px;
-
+    padding: 40px 0;
+    gap: 24px;
     .visual-card {
-      border-radius: 12px;
-
       .visual-image {
-        height: 260px;
-
+        width: 100%;
+        height: 100%;
         img {
-          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          display: block;
+          filter: brightness(0.97) saturate(1.05);
+          transition: transform 0.5s ease, filter 0.3s ease;
         }
       }
     }
@@ -601,8 +602,7 @@ body {
       gap: 5px;
 
       .contact-item {
-        font-size: 13px;
-        margin: 6px 4px;
+        font-size: 12px;
       }
     }
   }
