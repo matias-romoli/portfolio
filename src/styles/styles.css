@@ -1,4 +1,3 @@
-/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +8,6 @@
   font-size: 28px;
 }
 
-/* Layout */
 .portfolio {
   max-width: 1000px;
   width: 100%;
@@ -21,7 +19,6 @@ section {
   scroll-margin-top: 60px;
 }
 
-/* Base */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f7f7f7;
@@ -30,7 +27,6 @@ body {
   padding: 0 10px;
 }
 
-/* Second Card Container */
 .second-card-container {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
@@ -124,19 +120,29 @@ body {
 @media (max-width: 1200px) {
   .second-card-container {
     flex-direction: column;
+    padding: 25px;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
   }
   .second-card-container .second-card-title {
     justify-content: center;
     flex-direction: column;
     align-items: center;
     display: flex;
+    width: 90%;
+  }
+  .second-card-container .second-card-title h2 {
+    font-size: 1.3rem;
+  }
+  .second-card-container .second-card-title p {
+    font-size: 0.85rem;
+    text-align: center;
     width: 100%;
   }
   .second-card-container .second-card-body {
     justify-content: center;
     width: 100%;
+    gap: 15px;
   }
   .second-card-container .second-card-body .second-card:nth-child(2) {
     border-left: 2px solid rgba(27, 125, 178, 0.7098039216);
@@ -145,22 +151,12 @@ body {
   .second-card-container .second-card-body .second-card .card-container {
     width: 325px;
   }
-}
-@media (max-width: 600px) {
-  .second-card-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .second-card-container .second-card-body .second-card:nth-child(2) {
-    border-left: 2px solid rgba(27, 125, 178, 0.7098039216);
-    border-right: none;
-  }
-  .second-card-container .second-card-body .second-card .card-container {
-    width: 325px;
+  .second-card-container .second-card-body .second-card .second-img {
+    height: 90px;
+    width: 90px;
   }
 }
 
-/* Experience Section */
 .experience-section .experience-card {
   display: flex;
   align-items: flex-start;
@@ -228,10 +224,28 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 15px;
+    gap: 15px;
+  }
+  .experience-section .experience-card .experience-image {
+    width: 50px;
+    height: 50px;
+  }
+  .experience-section .experience-card .experience-image i {
+    width: 24px;
+    height: 24px;
+  }
+  .experience-section .experience-card .experience-data .data-container h1 {
+    font-size: 1.05rem;
+  }
+  .experience-section .experience-card .experience-data .data-container p {
+    font-size: 0.85rem;
+  }
+  .experience-section .experience-card .experience-data .experience-description {
+    font-size: 0.9rem;
   }
 }
 
-/* Visuals Section */
 .visual-section {
   display: flex;
   flex-wrap: wrap;
@@ -283,23 +297,20 @@ body {
 }
 @media (max-width: 1024px) {
   .visual-section {
-    padding: 40px 0;
-    gap: 24px;
+    padding: 30px 0;
+    gap: 16px;
+  }
+  .visual-section .visual-card {
+    border-radius: 12px;
   }
   .visual-section .visual-card .visual-image {
-    width: 100%;
-    height: 100%;
+    height: 260px;
   }
   .visual-section .visual-card .visual-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    filter: brightness(0.97) saturate(1.05);
-    transition: transform 0.5s ease, filter 0.3s ease;
+    object-fit: cover;
   }
 }
 
-/* About Section */
 .about-section {
   margin: 15px 0;
 }
@@ -313,7 +324,6 @@ body {
   color: #222;
 }
 
-/* Footer */
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   align-items: center;
@@ -352,15 +362,24 @@ body {
 @media (max-width: 600px) {
   .footer .footer-content {
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 10px;
   }
+  .footer .footer-content p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
   .footer .footer-links {
-    margin-top: 5px;
+    justify-content: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+  .footer .footer-links a {
+    font-size: 0.9rem;
   }
 }
 
-/* Header */
 .header {
   position: fixed;
   display: flex;
@@ -418,13 +437,20 @@ body {
 @media (max-width: 1024px) {
   .header {
     justify-content: center;
+    padding: 10px 20px;
   }
   .header .nav-list {
     display: none;
   }
+  .header .header-brand .name {
+    font-size: 1.2rem;
+  }
+  .header .header-brand .profile-photo {
+    height: 45px;
+    width: 40px;
+  }
 }
 
-/* Main */
 .main {
   display: flex;
   flex-direction: column;
@@ -476,35 +502,21 @@ body {
   color: rgba(27, 125, 178, 0.7098039216);
 }
 @media (max-width: 1024px) {
+  .main .hero {
+    padding: 25px 0;
+  }
+  .main .hero .hero-photo {
+    height: 120px;
+    width: 120px;
+  }
   .main .contact-info {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 5px;
   }
   .main .contact-info .contact-item {
-    display: flex;
-    font-size: 14px;
-    margin: 10px 3px 0;
-    padding: 0;
-  }
-  .main .contact-info .contact-item:nth-child(2):hover, .main .contact-info .contact-item:nth-child(3):hover {
-    color: #1b7eb2;
-  }
-  .main .contact-info .contact-item span {
-    margin-left: 5px;
-    user-select: none;
-  }
-  .main .contact-info .contact-item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5px;
-    color: #222;
-    text-decoration: none;
-    user-select: none;
-  }
-  .main .contact-info .contact-item a:hover {
-    color: #1b7eb2;
+    font-size: 13px;
+    margin: 6px 4px;
   }
 }
 
