@@ -5,6 +5,9 @@
 }
 .section-title {
   font-size: 28px;
+  @media (max-width: 1024px) {
+    font-size: 24px;
+  }
 }
 
 .portfolio {
@@ -24,7 +27,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f7f7f7;
   line-height: 1.6;
-  padding: 0 10px;
+  padding: 0 20px;
   color: #222;
 }
 
@@ -377,6 +380,9 @@ body {
       text-align: justify;
       font-weight: 400;
       color: #222;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -553,15 +559,19 @@ body {
   }
 
   .contact-info {
+    justify-content: space-evenly;
     display: flex;
+    width: 100%;
 
     .contact-item {
-      display: flex;
-      margin: 10px 5px 0;
-      padding: 0 10px;
-      font-size: 14px;
-      font-weight: 300;
+      justify-content: center;
+      flex-direction: column;
       text-decoration: none;
+      align-items: center;
+      user-select: none;
+      margin: 10px 5px 0;
+      color: #222;
+      display: flex;
 
       &:nth-child(2):hover,
       &:nth-child(3):hover {
@@ -569,20 +579,23 @@ body {
       }
 
       span {
-        margin-left: 5px;
-        user-select: none;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: none;
         align-items: center;
+        user-select: none;
+        color: #222;
         display: flex;
       }
 
       a {
-        display: flex;
-        align-items: center;
         justify-content: center;
-        margin-left: 5px;
-        color: #222;
+        flex-direction: column;
         text-decoration: none;
+        align-items: center;
         user-select: none;
+        color: #222;
+        display: flex;
 
         &:hover {
           color: #1b7db2b5;
@@ -607,7 +620,8 @@ body {
       gap: 5px;
 
       .contact-item {
-        font-size: 10px;
+        font-size: 10.5px;
+        width: 150px;
       }
     }
   }

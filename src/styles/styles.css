@@ -7,6 +7,11 @@
 .section-title {
   font-size: 28px;
 }
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 24px;
+  }
+}
 
 .portfolio {
   padding: 80px 20px 20px;
@@ -28,7 +33,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f7f7f7;
   line-height: 1.6;
-  padding: 0 10px;
+  padding: 0 20px;
   color: #222;
 }
 
@@ -330,6 +335,11 @@ body {
   font-weight: 400;
   color: #222;
 }
+@media (max-width: 1024px) {
+  .about-section .about-content .about-text {
+    font-size: 14px;
+  }
+}
 
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -479,33 +489,40 @@ body {
   border-radius: 50%;
 }
 .main .contact-info {
+  justify-content: space-evenly;
   display: flex;
+  width: 100%;
 }
 .main .contact-info .contact-item {
-  display: flex;
-  margin: 10px 5px 0;
-  padding: 0 10px;
-  font-size: 14px;
-  font-weight: 300;
+  justify-content: center;
+  flex-direction: column;
   text-decoration: none;
+  align-items: center;
+  user-select: none;
+  margin: 10px 5px 0;
+  color: #222;
+  display: flex;
 }
 .main .contact-info .contact-item:nth-child(2):hover, .main .contact-info .contact-item:nth-child(3):hover {
   color: #1b7eb2;
 }
 .main .contact-info .contact-item span {
-  margin-left: 5px;
-  user-select: none;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
   align-items: center;
+  user-select: none;
+  color: #222;
   display: flex;
 }
 .main .contact-info .contact-item a {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  margin-left: 5px;
-  color: #222;
+  flex-direction: column;
   text-decoration: none;
+  align-items: center;
   user-select: none;
+  color: #222;
+  display: flex;
 }
 .main .contact-info .contact-item a:hover {
   color: rgba(27, 125, 178, 0.7098039216);
@@ -524,7 +541,8 @@ body {
     gap: 5px;
   }
   .main .contact-info .contact-item {
-    font-size: 10px;
+    font-size: 10.5px;
+    width: 150px;
   }
 }
 
