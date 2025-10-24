@@ -14,237 +14,239 @@
 
   <body>
     <!-- ==========  ========== -->
-    <header class="header" id="header">
-      <div class="header-brand">
-        <img
-          class="profile-photo"
-          src="./public/logo.png"
-          alt="Logo de Matías Rómoli"
-          loading="lazy"
-        />
-        <h1 class="name">Matías Rómoli</h1>
-      </div>
+    <div id="content" class="hidden">
+      <header class="header" id="header">
+        <div class="header-brand">
+          <img
+            class="profile-photo"
+            src="./public/logo.png"
+            alt="Logo de Matías Rómoli"
+            loading="lazy"
+          />
+          <h1 class="name">Matías Rómoli</h1>
+        </div>
 
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#about">Sobre mí</a></li>
-          <li class="nav-item"><a href="#experience">Experiencia</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about">Sobre mí</a></li>
+            <li class="nav-item"><a href="#experience">Experiencia</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <!-- ==========  ========== -->
-    <section class="portfolio">
-      <main class="main">
+      <!-- ==========  ========== -->
+      <section class="portfolio">
+        <main class="main">
+          <!-- ==========  ========== -->
+          <section class="hero">
+            <div class="hero-info">
+              <img
+                class="hero-photo"
+                src="./public/me.png"
+                alt="Foto de perfil de Matías Rómoli"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-item">
+                <i data-lucide="map-pin"></i>
+                <span>La Plata, Argentina</span>
+              </p>
+              <p class="contact-item">
+                <a href="mailto:matiasromoli22@gmail.com">
+                  <i data-lucide="mail"></i>
+                  <span>matiasromoli22@gmail.com</span>
+                </a>
+              </p>
+              <p class="contact-item">
+                <a
+                  href="https://linkedin.com/in/matiasromoli"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i data-lucide="linkedin"></i>
+                  <span>linkedin.com/in/matiasromoli</span>
+                </a>
+              </p>
+              <p class="contact-item">
+                <a
+                  href="https://github.com/matias-romoli"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i data-lucide="github"></i>
+                  <span>github.com/matiasromoli</span>
+                </a>
+              </p>
+            </div>
+          </section>
+          <!-- ==========  ========== -->
+          <section class="about-section" id="about">
+            <div class="about-content">
+              <h2 class="section-title">Sobre mí</h2>
+              <p class="about-text">
+                Técnico Superior en Periodismo Deportivo y estudiante de la
+                Licenciatura en Comunicación Social (UNLP). Coberturas
+                periodísticas, redacción y radio. Diseño y programación.
+              </p>
+            </div>
+          </section>
+          <!-- ==========  ========== -->
+          <section class="experience-section" id="experience">
+            <h2 class="section-title">Experiencia</h2>
+
+            <!-- Card 1 -->
+            <div class="experience-card">
+              <div class="experience-image">
+                <i data-lucide="edit-3"></i>
+              </div>
+              <div class="experience-data">
+                <div class="data-container">
+                  <h3>Redactor</h3>
+                  <p>La Plata 1 / Gambeta LP / Diagonal Al Aro</p>
+                </div>
+                <p class="experience-description">
+                  Redactor de artículos periodísticos para la web. Noticias de
+                  índole social y deportivas. En Diagonal Al Aro. Columna radial
+                  sobre el básquet platense, Liga Federal y Liga Argentina, con
+                  análisis, entrevistas y actualidad de los equipos y
+                  protagonistas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="experience-card">
+              <div class="experience-image">
+                <i data-lucide="tv"></i>
+              </div>
+              <div class="experience-data">
+                <div class="data-container">
+                  <h3>Prensa</h3>
+                  <p>Club Reconquista La Plata</p>
+                </div>
+                <p class="experience-description">
+                  Encargado de las transmisiones de básquet. Productor y editor.
+                  Manejo de herramientas y software de transmisión en vivo: OBS,
+                  cámaras y edición con Canva.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="experience-card">
+              <div class="experience-image">
+                <i data-lucide="megaphone"></i>
+              </div>
+              <div class="experience-data">
+                <div class="data-container">
+                  <h3>Community Manager</h3>
+                  <p>Estilista</p>
+                </div>
+                <p class="experience-description">
+                  Gestión integral de redes sociales. Creador de contenido.
+                  Planificación y análisis de métricas con Excel. Optimización
+                  de la comunicación interna y externa.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- ==========  ========== -->
+          <section class="visual-section">
+            <div class="visual-card">
+              <div class="visual-image">
+                <img
+                  src="./public/imagen1.png"
+                  alt="Imagen de experiencias laborales"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="second-card-container">
+              <div class="second-card-title">
+                <h2>Entrevistas</h2>
+                <p>
+                  Realizadas para Diagonal Al Aro y la columna de básquet en FM
+                  Raíces Rock.
+                </p>
+              </div>
+
+              <div class="second-card-body">
+                <!-- Entrevista 1 -->
+                <div class="second-card">
+                  <a
+                    href="https://www.youtube.com/watch?v=Bi-FTU-2dgY&t=2s"
+                    rel="noopener noreferrer"
+                    class="card-container"
+                    target="_blank"
+                  >
+                    <div class="second-img">
+                      <img
+                        src="./public/lucas-conti.png"
+                        alt="Logo Estudiantes de La Plata"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="second-title">
+                      <h3>Lucas Conti</h3>
+                      <p>Técnico de Estudiantes de La Plata</p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Entrevista 2 -->
+                <div class="second-card">
+                  <a
+                    href="https://www.youtube.com/watch?v=BWvlUROwv54&t=12s"
+                    rel="noopener noreferrer"
+                    class="card-container"
+                    target="_blank"
+                  >
+                    <div class="second-img">
+                      <img
+                        src="./public/ruben-perez.png"
+                        alt="Ruben Perez. Circulo Policial."
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="second-title">
+                      <h3>Ruben Perez</h3>
+                      <p>Coordinador de Circulo Policial.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
         <!-- ==========  ========== -->
-        <section class="hero">
-          <div class="hero-info">
-            <img
-              class="hero-photo"
-              src="./public/me.png"
-              alt="Foto de perfil de Matías Rómoli"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="contact-info">
-            <p class="contact-item">
-              <i data-lucide="map-pin"></i>
-              <span>La Plata, Argentina</span>
-            </p>
-            <p class="contact-item">
-              <a href="mailto:matiasromoli22@gmail.com">
-                <i data-lucide="mail"></i>
-                <span>matiasromoli22@gmail.com</span>
-              </a>
-            </p>
-            <p class="contact-item">
+        <footer class="footer">
+          <div class="footer-content">
+            <p>© 2025 Matías Rómoli — Todos los derechos reservados</p>
+            <div class="footer-links">
+              <a href="mailto:matiasromoli22@gmail.com"
+                ><i data-lucide="mail"></i
+              ></a>
               <a
                 href="https://linkedin.com/in/matiasromoli"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                <i data-lucide="linkedin"></i>
-                <span>linkedin.com/in/matiasromoli</span>
-              </a>
-            </p>
-            <p class="contact-item">
+                ><i data-lucide="linkedin"></i
+              ></a>
               <a
-                href="https://github.com/matias-romoli"
+                href="https://github.com/matiasromoli"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                <i data-lucide="github"></i>
-                <span>github.com/matiasromoli</span>
-              </a>
-            </p>
-          </div>
-        </section>
-        <!-- ==========  ========== -->
-        <section class="about-section" id="about">
-          <div class="about-content">
-            <h2 class="section-title">Sobre mí</h2>
-            <p class="about-text">
-              Técnico Superior en Periodismo Deportivo y estudiante de la
-              Licenciatura en Comunicación Social (UNLP). Coberturas
-              periodísticas, redacción y radio. Diseño y programación.
-            </p>
-          </div>
-        </section>
-        <!-- ==========  ========== -->
-        <section class="experience-section" id="experience">
-          <h2 class="section-title">Experiencia</h2>
-
-          <!-- Card 1 -->
-          <div class="experience-card">
-            <div class="experience-image">
-              <i data-lucide="edit-3"></i>
-            </div>
-            <div class="experience-data">
-              <div class="data-container">
-                <h3>Redactor</h3>
-                <p>La Plata 1 / Gambeta LP / Diagonal Al Aro</p>
-              </div>
-              <p class="experience-description">
-                Redactor de artículos periodísticos para la web. Noticias de
-                índole social y deportivas. En Diagonal Al Aro. Columna radial
-                sobre el básquet platense, Liga Federal y Liga Argentina, con
-                análisis, entrevistas y actualidad de los equipos y
-                protagonistas.
-              </p>
+                ><i data-lucide="github"></i
+              ></a>
             </div>
           </div>
-
-          <!-- Card 3 -->
-          <div class="experience-card">
-            <div class="experience-image">
-              <i data-lucide="tv"></i>
-            </div>
-            <div class="experience-data">
-              <div class="data-container">
-                <h3>Prensa</h3>
-                <p>Club Reconquista La Plata</p>
-              </div>
-              <p class="experience-description">
-                Encargado de las transmisiones de básquet. Productor y editor.
-                Manejo de herramientas y software de transmisión en vivo: OBS,
-                cámaras y edición con Canva.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="experience-card">
-            <div class="experience-image">
-              <i data-lucide="megaphone"></i>
-            </div>
-            <div class="experience-data">
-              <div class="data-container">
-                <h3>Community Manager</h3>
-                <p>Estilista</p>
-              </div>
-              <p class="experience-description">
-                Gestión integral de redes sociales. Creador de contenido.
-                Planificación y análisis de métricas con Excel. Optimización de
-                la comunicación interna y externa.
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- ==========  ========== -->
-        <section class="visual-section">
-          <div class="visual-card">
-            <div class="visual-image">
-              <img
-                src="./public/imagen1.png"
-                alt="Imagen de experiencias laborales"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="second-card-container">
-            <div class="second-card-title">
-              <h2>Entrevistas</h2>
-              <p>
-                Realizadas para Diagonal Al Aro y la columna de básquet en FM
-                Raíces Rock.
-              </p>
-            </div>
-
-            <div class="second-card-body">
-              <!-- Entrevista 1 -->
-              <div class="second-card">
-                <a
-                  href="https://www.youtube.com/watch?v=Bi-FTU-2dgY&t=2s"
-                  rel="noopener noreferrer"
-                  class="card-container"
-                  target="_blank"
-                >
-                  <div class="second-img">
-                    <img
-                      src="./public/lucas-conti.png"
-                      alt="Logo Estudiantes de La Plata"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="second-title">
-                    <h3>Lucas Conti</h3>
-                    <p>Técnico de Estudiantes de La Plata</p>
-                  </div>
-                </a>
-              </div>
-
-              <!-- Entrevista 2 -->
-              <div class="second-card">
-                <a
-                  href="https://www.youtube.com/watch?v=BWvlUROwv54&t=12s"
-                  rel="noopener noreferrer"
-                  class="card-container"
-                  target="_blank"
-                >
-                  <div class="second-img">
-                    <img
-                      src="./public/ruben-perez.png"
-                      alt="Ruben Perez. Circulo Policial."
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="second-title">
-                    <h3>Ruben Perez</h3>
-                    <p>Coordinador de Circulo Policial.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- ==========  ========== -->
-      <footer class="footer">
-        <div class="footer-content">
-          <p>© 2025 Matías Rómoli — Todos los derechos reservados</p>
-          <div class="footer-links">
-            <a href="mailto:matiasromoli22@gmail.com"
-              ><i data-lucide="mail"></i
-            ></a>
-            <a
-              href="https://linkedin.com/in/matiasromoli"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i data-lucide="linkedin"></i
-            ></a>
-            <a
-              href="https://github.com/matiasromoli"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i data-lucide="github"></i
-            ></a>
-          </div>
-        </div>
-      </footer>
-    </section>
+        </footer>
+      </section>
+    </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
