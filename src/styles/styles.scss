@@ -22,9 +22,10 @@ section {
   scroll-margin-top: 60px;
 }
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f7f7f7;
   line-height: 1.6;
+  font-weight: 400;
   color: #222;
 }
 
@@ -50,8 +51,8 @@ body {
     display: flex;
     width: 100%;
     h2 {
-      font-size: 1.4rem;
-      font-weight: 700;
+      font-size: 1.7rem;
+      font-weight: 600;
       color: #222;
     }
     p {
@@ -85,7 +86,7 @@ body {
       opacity: 1;
 
       &::before {
-        border-left: 2px solid #1b7db2b5;
+        border-left: 2px solid #d2e4f0;
         position: absolute;
         content: "";
         left: -15px;
@@ -166,16 +167,13 @@ body {
   }
   .btn {
     transition: background-color 0.3s ease;
-    background-color: #005fa3;
+    background-color: #0077cc75;
     border-radius: 6px;
     padding: 10px 20px;
     color: #f7f7f7;
     font-size: 1rem;
     cursor: pointer;
     border: none;
-    &:hover {
-      background-color: #0077ccb5;
-    }
   }
 
   @media (max-width: 1200px) {
@@ -215,6 +213,10 @@ body {
 }
 
 .experience-section {
+  .section-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
   .experience-card {
     display: flex;
     align-items: flex-start;
@@ -266,8 +268,9 @@ body {
       .data-container {
         margin-bottom: 10px;
 
-        h1 {
+        h3 {
           font-size: 1.2rem;
+          font-weight: 600;
           color: #222;
         }
 
@@ -408,9 +411,14 @@ body {
     user-select: none;
     padding: 15px 0;
 
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
     .about-text {
       text-align: justify;
       font-weight: 400;
+      font-size: 1rem;
       color: #222;
       @media (max-width: 1024px) {
         font-size: 14px;
@@ -427,7 +435,7 @@ body {
   height: 60px;
 
   .footer-content {
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -514,13 +522,15 @@ body {
 
     .profile-photo {
       user-select: none;
-      width: 45px;
-      height: 50px;
+      width: 35px;
+      height: 40px;
     }
 
     .name {
       user-select: none;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
+      margin-left: 5px;
+      font-weight: 600;
       color: #222;
     }
   }
@@ -608,6 +618,7 @@ body {
       align-items: center;
       margin: 10px 5px 0;
       user-select: none;
+      font-size: 0.9rem;
       color: #222;
       display: flex;
 
