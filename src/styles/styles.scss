@@ -664,15 +664,10 @@ body {
     }
     justify-content: center;
     .contact-item {
-      margin-bottom: 0px;
-      font-size: 12px;
-      width: 45%;
-    }
-  }
-  @media (max-width: 350px) {
-    .contact-item {
-      font-size: 12px;
       width: 100%;
+      span {
+        font-size: 0.9rem;
+      }
     }
   }
 }
